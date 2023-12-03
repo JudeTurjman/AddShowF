@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "109795214947",
+    "project_id": "addshowf",
+    "storage_bucket": "addshowf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109795214947:android:a52264cd3c75fb0a9c9a56",
+        "android_client_info": {
+          "package_name": "com.jude.addshowf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq8FuVeUYY1gLqRY5o7wnS_w-olmPIpsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

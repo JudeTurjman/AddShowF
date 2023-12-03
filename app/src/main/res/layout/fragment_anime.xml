@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="111dp"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/etRelease"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:ems="10"
+            android:hint="Enter Year Release"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/etRating"
+            app:layout_constraintStart_toStartOf="@+id/etName"
+            app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+        <EditText
+            android:id="@+id/etRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="117dp"
+            android:ems="10"
+            android:hint="Enter Rating out of 10"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+            app:layout_constraintStart_toStartOf="@+id/etRelease"
+            app:layout_constraintTop_toBottomOf="@+id/etRelease" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="38dp"
+            android:text="Add Anime"
+            app:layout_constraintBottom_toTopOf="@+id/btnShow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etRating" />
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="189dp"
+            android:text="Show Anime"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btnAdd"
+            app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
